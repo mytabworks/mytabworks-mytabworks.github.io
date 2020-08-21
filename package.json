@@ -1,0 +1,19 @@
+{
+  "name": "mytabworks.github.io",
+  "version": "1.0.1",
+  "description": "mytabworks",
+  "main": "precache-manifest.37275e892d1ee6537605e17bd1d23303.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mytabworks/mytabworks-mytabworks.github.io.git"
+  },
+  "author": "mytabworks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mytabworks/mytabworks-mytabworks.github.io/issues"
+  },
+  "homepage": "https://mytabworks.github.io/"
+}
