@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dcc687ebe1f0f4988f59155d29702034",
+    "revision": "22c4cefaeda09a3670cdd6a7fcfdcbce",
     "url": "https://mytabworks.github.io/index.html"
   },
   {
-    "revision": "73f9ab37d73716a70fe5",
+    "revision": "7cfb59638909e1307f6e",
     "url": "https://mytabworks.github.io/static/css/main.a4a8b16d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://mytabworks.github.io/static/js/2.e435b238.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "73f9ab37d73716a70fe5",
-    "url": "https://mytabworks.github.io/static/js/main.e16fa736.chunk.js"
+    "revision": "7cfb59638909e1307f6e",
+    "url": "https://mytabworks.github.io/static/js/main.ddabdeab.chunk.js"
   },
   {
     "revision": "fdb40f2263981f5432ff",
