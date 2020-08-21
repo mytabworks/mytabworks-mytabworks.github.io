@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://mytabworks.github.io/precache-manifest.ab586a9d616044924edcf8301925378d.js"
+  "https://mytabworks.github.io/precache-manifest.a3434661fa29b5279318d73d0f5081fd.js"
 );
 
 self.addEventListener('message', (event) => {

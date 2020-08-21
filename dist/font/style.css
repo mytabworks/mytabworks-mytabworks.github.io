@@ -8,6 +8,7 @@
 		url('../font/mytabworks.svg?47992941#mytabworks') format('svg');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 .mytabworks {
 	font-family: 'mytabworks';
