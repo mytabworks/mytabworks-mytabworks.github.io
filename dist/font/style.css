@@ -160,3 +160,12 @@
 .mytabworks.icon-wrench:before {
 	content: '\E810';
 }
+.mytabworks.icon-hand-peace:before {
+	content: '\F25B';
+}
+.mytabworks.icon-user-secret:before {
+	content: '\F21B';
+}
+.mytabworks.icon-crown:before {
+	content: '\E844';
+}

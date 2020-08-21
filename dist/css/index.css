@@ -48,6 +48,14 @@ body {
     display: flex;
     flex-grow: 2;
 }
+.navibar-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
 @media only screen 
 and (min-device-width: 320px) 
 and (max-device-width: 991px)
@@ -85,7 +93,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     .navibar .navibar-brand {
         margin-right: 0;
     }
-    .navibar-brand > span {
+    .navibar-brand > span:not([data-phone-show]) {
         display: none;
 	}
 }
@@ -116,7 +124,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
     margin-bottom: 25px;
 }
 .icon-card-wrapper > .icon-card-title {
-    font-weight: 400;
+    font-weight: 500;
 }
 .icon-card-wrapper.n-engrave {
     padding: 50px 0 35px;
@@ -196,8 +204,8 @@ and (-webkit-min-device-pixel-ratio: 2) {
     } 
 }
 /*mobile portrait*/
-@media only screen 
-  and (max-device-width: 469px)  
+@media only screen  
+  and (max-device-width: 568px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     .stunning-card { 
         height: auto;
@@ -223,7 +231,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .morph-engrave:hover, .morph-engrave.active {
     animation: morph 500ms linear, morph-infinite 4s linear infinite alternate 500ms, shadow-dance-engrave 4s linear infinite alternate;
 }
-.wave, .morph-frame {
+.morph-frame {
+	border-radius: 50% 25%;
+}
+.wave {
     border-radius: 120% 54% 65% 60%/83%;
 }
 .wave:hover, .wave.active {
@@ -277,7 +288,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 .wrapper > .nav-sidebar > .side-nav {
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: calc(100% - 3rem);
 	overflow-y: auto;
 }
 .wrapper > .nav-sidebar > .side-nav > a.n-btn  {
@@ -287,6 +298,10 @@ and (-webkit-min-device-pixel-ratio: 2) {
 }
 .wrapper > .nav-sidebar > .side-nav > :first-child  {
     margin-top: 8px !important;
+}
+
+.wrapper > .nav-sidebar > .copyright {
+    margin: 0.7rem 2rem 0;
 }
 
 @media screen and (max-width: 1025px) {
@@ -476,22 +491,25 @@ ul.scroll-nav > li > a.active {
 	display: none;
 }
 @media screen and (max-width: 1025px) { 
-	.mobile-tip {
-		display: flex;
-		align-items: center;
+	.mobile-tip,
+	.mobile-tip-pan {
 		position: absolute;
 		left: 100%;
 		top: 0; 
+	}
+	.mobile-tip {
+		display: flex;
+		align-items: center;
+		width: 20px;
 		height: 100%; 
 		padding: 15px 10px 15px 0px;
 		transition: opacity 300ms ease-in-out;
 	}
-	.mobile-tip:before {
-		content: '';
-		width: 3px;
-		height: 70px;
-		border-radius: 50px;
-		margin: 0 5px; 
+	.mobile-tip-pan {
+		display: block;
+		left: 0;
+		padding: 5px 3px;
+    	border-radius: 0 5px 5px 0;
 	}
 	.grabbed > .mobile-tip,
 	.show > .mobile-tip {
@@ -887,6 +905,12 @@ strong {
 }
 .h-full {
 	height: 100% !important;
+}
+.w-auto {
+	width: auto !important;
+}
+.h-auto {
+	height: auto !important;
 }
 .t-center {
 	text-align: center;
@@ -1368,7 +1392,9 @@ strong {
 	bottom: 0;
 	right: 0;
 }
-
+[hidden] {
+	display: none !important;
+}
 .drag-container {  
 	display: flex;
 	flex-wrap: wrap;
